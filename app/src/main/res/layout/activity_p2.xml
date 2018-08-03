@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--- Se crea el Absolutelayout que es para que los widgets que estén dentro de este -->
+<!---  contenedor basarán su posición en relación con los otros elementos. -->
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Fondo" >
+
+
+    <!--- Se crea el Linearlayout que es para que los widgets que estén dentro de este -->
+    <!---  contenedor basarán su posición en relación con los otros elementos. -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="282dp"
+        android:layout_x="3dp"
+        android:layout_y="35dp"
+        android:orientation="vertical" >
+
+        <!--- Se crea un textView que se iniciara en 0 -->
+        <!--- Los TextView son propiedades de texto que nos van a permitir personalizar nuestros Layout-->
+        <TextView
+            android:id="@+id/textViewNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Nombre"
+            android:textSize="25dp" />
+
+        <!-- Es el componente de edicion de texto que proporciona la plataforma de Android
+         permite la introduccion y edicion de texto por parte del usuario -->
+        <EditText
+            android:id="@+id/editTextNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hintNombre"
+            android:inputType="textPersonName" >
+
+            <requestFocus />
+        </EditText> <!--- Se cierra la etiqueta del EditText -->
+
+        <!--- Se crea un textView que se iniciara en 0 -->
+        <!--- Los TextView son propiedades de texto que nos van a permitir personalizar nuestros Layout-->
+        <TextView
+            android:id="@+id/textViewPaterno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ApellidoPaterno"
+            android:textSize="25dp" />
+
+        <!-- Es el componente de edicion de texto que proporciona la plataforma de Android
+         permite la introduccion y edicion de texto por parte del usuario -->
+        <EditText
+            android:id="@+id/editTextPaterno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hintPaterno"
+            android:inputType="textPersonName" />
+
+        <!--- Se crea un textView que se iniciara en 0 -->
+        <!--- Los TextView son propiedades de texto que nos van a permitir personalizar nuestros Layout-->
+        <TextView
+            android:id="@+id/textViewMaterno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ApellidoMaterno"
+            android:textSize="25dp" />
+
+        <!-- Es el componente de edicion de texto que proporciona la plataforma de Android
+         permite la introduccion y edicion de texto por parte del usuario -->
+        <EditText
+            android:id="@+id/editTextMaterno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hintMAterno"
+            android:inputType="textPersonName" />
+
+    </LinearLayout> <!--- Se cierra la etiqueta del Linearlayout creado -->
+
+    <!--- Se crea un boton personalizado -->
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="213dp"
+        android:layout_y="351dp"
+        android:text="@string/P2ButtonNext" />
+
+</AbsoluteLayout> <!--- Se cierra la etiqueta del Absolutelayout creado -->
